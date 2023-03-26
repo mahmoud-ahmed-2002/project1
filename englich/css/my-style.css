@@ -1,8 +1,9 @@
-body{
+body {
     text-transform: capitalize;
 }
+
 /* ---------- --------------- navbar english ------------ ------------- */
-.navbar .navbar-nav .nav-link{
+.navbar .navbar-nav .nav-link {
     font-weight: 500;
     font-size: 14px;
     margin: 0 10px;
@@ -14,11 +15,12 @@ body{
     right: 0px;
 }
 
-.navbar .navbar-nav li:hover .nav-link span::after,.navbar.navbar-light .navbar-nav .nav-link.active span::after{
+.navbar .navbar-nav li:hover .nav-link span::after,
+.navbar.navbar-light .navbar-nav .nav-link.active span::after {
     transform-origin: center left;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     text-align: left;
 }
 
@@ -54,9 +56,106 @@ body{
     float: left;
 }
 
-.subscribe-form button {right: 0;
+.subscribe-form button {
+    right: 0;
 }
 
 .footer-menu li {
     margin-left: 20px;
+}
+
+/* courses */
+
+.class-scroll .schedule li {
+    float: right;
+    padding-right: 15px;
+    border-left: 1px solid #ccc;
+}
+
+.class-scroll .schedule li:last-child {
+    padding-left: 0;
+    border-left: none;
+}
+
+.class-active {
+    margin-left: -350px;
+}
+
+.courses-item {
+    float: right;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.courses-content {
+    float: right;
+}
+
+.courses-content .cat {
+    left: 30px;
+}
+
+.courses-content .cat i {
+    margin-left: 5px;
+}
+
+.courses-item .icon {
+    float: right;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.course-widget-price li i {
+    padding-left: 9px;
+    padding-right: 2px;
+}
+
+.course-widget-price li span:last-child {
+    float: left;
+}
+
+.shop-area .courses-item {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.class-active .slick-arrow {
+    right: 71.6%;
+}
+
+.class-active .slick-next {
+    right: 76%;
+    left: 0;
+}
+
+.course-meta2 .left {
+    float: right;
+}
+
+.course-meta2 .left li {
+    float: right;
+    margin-left: 30px;
+}
+
+.course-meta2 .right {
+    float: left;
+}
+
+.shop-area .class-item {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.class-content .schedule li:first-child {
+    padding-right: 0;
+}
+
+.class-content .schedule li:last-child {
+    padding-left: 0;
+    border-left: none;
+}
+
+.class-content .schedule li {
+    float: right;
+    border-left: 1px solid #ccc;
 }

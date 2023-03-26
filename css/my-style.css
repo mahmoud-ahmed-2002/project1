@@ -17,7 +17,9 @@ body {
 .text-olivine-green {
     color: var(--main-color);
 }
-
+ul{
+    list-style: none;
+}
 .my-btn {
     background-color: var(--main-color);
     color: #fff;
@@ -90,9 +92,8 @@ header.sticky .navbar .navbar-brand .default-logo {
     transform: scaleX(1);
     transform-origin: center right;
 }
-
-.navbar.navbar-light .navbar-nav>.dropdown.active>a {
-    color: var(--main-color) !important;
+.navbar.navbar-light .navbar-nav > .dropdown.active > a, .navbar.navbar-light .navbar-nav > .nav-item.dropdown.megamenu:hover > a, .navbar.navbar-light .navbar-nav > .nav-item.dropdown.simple-dropdown:hover > a, .sticky .navbar.header-light .navbar-nav > .dropdown.active > a, .sticky .navbar.navbar-dark.header-light .navbar-nav > .nav-item.dropdown.megamenu:hover > a, .sticky .navbar.navbar-dark.header-light .navbar-nav > .nav-item.dropdown.simple-dropdown:hover > a{
+    color: #000 !important;
 }
 
 .navbar.navbar-light .navbar-nav .nav-link {}
@@ -713,7 +714,7 @@ select option {
 .courses-item .icon {
     float: left;
     text-align: left;
-    margin-top: -60px;
+    margin-top: -90px;
     margin-left: 30px;
 }
 
@@ -1687,88 +1688,38 @@ select option {
     z-index: -1;
 }
 
-/* ------------------ -------------------- idea view ------------- ------------------- ----------------- */
-.group {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    padding: 0 50px;
-}
-
-.card {
-    border: 1px solid #dddddd;
-    height: 400px;
-    //background-color: #dddddd;
-    width: 270px;
-
-    display: flex;
-    flex-direction: column;
-    overflow: hiddeb;
-
-}
-
-.card .img-analytics {
-    width: 100%;
-    height: 120px;
-}
-
-.card h1 {
-
-    margin-top: 10px;
-    font-size: 0.95em;
-    font-weight: bold;
-    line-height: 1.3;
-
-}
-
-.card-author {
-    font-size: 0.7em;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: rgba(1, 1, 1, 0.7);
-}
-
-.card .cat-name {
-    margin-top: 10px;
-    font-size: 0.7em;
-    font-weight: bold;
-    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+/* ------------------ -------------------- question view ------------- ------------------- ----------------- */
+.comment-user {
+    float: right;
+    margin-left: 20px;
+  }
+  
+  .comment-detail {
+    display: table-cell;
     padding-bottom: 10px;
-
-}
-
-.idea-card-body {
-    padding: 0 20px;
-}
-
-.short-desc {
-    font-size: 0.83em;
-    color: #6a6a6a;
-}
-
-.card-phase {
-    font-size: 0.7em;
-    font-weight: bold;
-    padding: 10px 0;
-    color: #6a6a6a;
-}
-
-.card-line {
-    margin-top: 20px;
+  }
+  
+  .comment-list > li {
     width: 100%;
-    height: 2px;
-    background-color: red;
+    padding-top: 20px;
+    border-top: 1px solid #e1e1e1;
+  }
+  
+  .comment-detail .post-info ul li {
+    margin-left: 15px;
+    font-size: 14px;
+    padding: 0;
+  }
+  
+  .comment-detail .post-info ul li a {
+    color: #6d6d6d;
+  }
+  
+  .comment-detail .post-info ul li a:hover {
+    color: var(--main-color);
+  }
 
-}
-
-.discussion {
-    background-color: red;
-}
-
-.evaluation {
-    background-color: #054a02;
-}
-
-.aprove {
-    background-color: #2b3ba6;
-}
+  .replay-list{
+    padding-bottom: 10px;
+    padding-right: 70px;
+  }
