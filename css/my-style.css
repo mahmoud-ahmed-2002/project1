@@ -96,7 +96,7 @@ header.sticky .navbar .navbar-brand .default-logo {
     color: #000 !important;
 }
 
-.navbar.navbar-light .navbar-nav .nav-link {}
+
 
 .dropdown-menu {
     text-align: right;
@@ -1659,8 +1659,8 @@ select option {
 }
 
 .btn:hover {
-    color: #000;
-    border-color: var(--sec-color);
+    color: white;
+ border-color: var(--sec-color);
 }
 
 .my--btn::before {
