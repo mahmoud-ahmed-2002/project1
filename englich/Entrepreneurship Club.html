@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/font-icons.min.css" />
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/theme-vendors.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/my-style.css">
+    <link rel="stylesheet" href="css/my-style.css">
+
+</head>
+<style>
+    .cd-headline.loading-bar .cd-words-wrapper::after {
+        background-color: #f19202;
+    }
+
+    .link-text:hover {
+        color: #f19202;
+    }
+</style>
+
+<body data-mobile-nav-style="classic">
+    <!-- start header -->
+    <header>
+        <!-- start navigation -->
+        <nav
+            class="navbar navbar-expand-lg top-space navbar-light bg-white header-light fixed-top navbar-boxed header-reverse-scroll">
+            <div class="container-fluid nav-header-container">
+                <div class="col-6 col-lg-2 mS-auto ps-lg-0">
+                    <a class="navbar-brand" href="index.html">
+                        <div class="  w-100 d-inline-block ">
+                            <img src="image/logo-H-english.png" class="default-logo" alt="">
+                        </div>
+                        Entrepreneurship <span>Club</span>
+                    </a>
+                </div>
+                <div class="col-auto menu-order px-lg-0">
+                    <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+                    <div class=" collapse navbar-collapse justify-content-center font-weight-600" id="navbarNav">
+                        <ul class="navbar-nav alt-font">
+                            <li class="nav-item dropdown megamenu">
+                                <a href="index.html" class="nav-link"><span>Home</span></a>
+                            </li>
+                            <li class="nav-item dropdown simple-dropdown">
+                                <a href="about.html" class="nav-link"><span>About US </span></a>
+                            </li>
+                            <li class="nav-item dropdown simple-dropdown">
+                                <a href="generating energies.html" class="nav-link"><span>Energies and Abilities
+                                    </span></a>
+                            </li>
+                            <li class="nav-item dropdown megamenu">
+                                <a href="Intellectual property rights.html" class="nav-link"><span>Intellectual
+                                        property
+                                        rights</span></a>
+                            </li>
+                            <li class="nav-item dropdown simple-dropdown">
+                                <a href="course.html" class="nav-link"><span>Course </span></a>
+                            </li>
+                            <li class="nav-item dropdown simple-dropdown">
+                                <a href="Finance and public relations.html" class="nav-link"><span>Finance and
+                                        relationships the public</span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li class="dropdown"><a href="Legal-advice.html">Legal advice</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown simple-dropdown">
+                                <a href="Entrepreneurship Club.html" class="nav-link active"><span>Entrepreneurship Club
+                                    </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto text-end hidden-xs pe-0 font-size-0">
+                    <div class="header-language dropdown d-lg-inline-block">
+                        <a href="javascript:void(0);"><i class="feather icon-feather-globe"
+                                style="color: black;"></i></a>
+                        <ul class="dropdown-menu alt-font">
+                            <li><a href="javascript:void(0);" title="English"><span class="icon-country"><img
+                                            src="../../images/country-flag-16X16/usa.png" alt=""></span>English</a></li>
+                            <li><a href="../Entrepreneurship Club.html" title="England"><span class="icon-country"><img
+                                            src="../../images/country-flag-16X16/egypt.png" alt=""></span>العربية</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <!-- end navigation -->
+        <div class="push-menu padding-50px-lr bg-white">
+            <a href="javascript:void(0);" class="close-menu text-extra-dark-gray"><i class="fas fa-times"></i></a>
+            <div class="push-menu-wrapper text-center" data-scroll-options='{ "theme": "dark" }'>
+                <h1
+                    class="text-extra-dark-gray alt-font font-weight-700 letter-spacing-minus-3px text-uppercase no-margin-bottom">
+                    Hello</h1>
+                <span class="alt-font text-fast-blue text-large text-uppercase d-block">Let's be friends.</span>
+                <div class="w-100 margin-5-rem-tb lg-margin-3-rem-tb">
+                    <ul class="instafeed-grid instafeed-wrapper grid grid-3col xl-grid-3col lg-grid-3col md-grid-3col sm-grid-3col xs-grid-3col gutter-small"
+                        data-total="6">
+                        <li class="grid-item">
+                            <figure><a href="#" data-href="{{link}}" target="_blank"><img src="#" data-src="{{image}}"
+                                        class="insta-image" alt="" /><span class="insta-counts"><i
+                                            class="fab fa-instagram"></i>{{likes}}</span></a></figure>
+                        </li>
+                    </ul>
+                </div>
+                <div class="margin-5-rem-bottom text-center lg-margin-3-rem-bottom">
+                    <span
+                        class="alt-font text-large margin-3-rem-bottom w-70 mx-auto text-extra-dark-gray d-inline-block line-height-26px lg-margin-2-rem-bottom">Get
+                        latest update for our trusted applications</span>
+                    <form action="https://lithohtml.themezaa.com/email-templates/subscribe-newsletter.php"
+                        method="post">
+                        <div class="newsletter-email position-relative">
+                            <input class="border-radius-5px medium-input m-0 required" name="email"
+                                placeholder="Enter your email address" type="email">
+                            <input type="hidden" name="redirect" value="">
+                            <button class="btn btn-medium line-height-18px submit" type="submit"><i
+                                    class="far fa-envelope text-fast-blue left-icon"></i>subscribe</button>
+                            <div class="form-results rounded d-none position-absolute"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="text-center elements-social social-icon-style-02 margin-10px-bottom">
+                    <ul class="small-icon dark">
+                        <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="dribbble" href="http://www.dribbble.com/" target="_blank"><i
+                                    class="fab fa-dribbble"></i></a></li>
+                        <li><a class="twitter" href="http://www.twitter.com/" target="_blank"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="http://www.instagram.com/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="http://www.linkedin.com/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- start section -->
+    <!-- start page title -->
+    <section class="parallax" data-parallax-background-ratio="0.5"
+        style="background-image:url('../images/6-Diversity-Goals-Your--Company-Must-Achieve-In-2022.png');">
+        <div class="opacity-extra-medium bg-extra-dark-gray"></div>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-center small-screen">
+                <div
+                    class="col-12 position-relative page-title-extra-small text-center d-flex align-items-center justify-content-center flex-column">
+                    <h1 class="alt-font text-white opacity-6 margin-20px-bottom">Entrepreneurship Club</h1>
+                    <h2
+                        class="text-white alt-font font-weight-500 w-55 md-w-65 sm-w-80 center-col xs-w-100 letter-spacing-2px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom">
+                        Entrepreneurship Club</h2>
+                </div>
+                <div class="down-section text-center"><a href="#activities" class="section-link"><i
+                            class="ti-arrow-down icon-extra-small text-white bg-transparent-black padding-15px-all xs-padding-10px-all border-radius-100"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end page title -->
+    <!-- end section -->
+    <!-- start section -->
+    <section id="activities" class="overflow-visible cover-background wow animate__fadeIn"
+        style="background-image:url('../images/home-interior-design-about-bg.jpg');">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-lg-6 col-md-10  lg-margin-30px-top md-margin-9-rem-bottom sm-margin-9-rem-bottom wow animate__fadeIn"
+                    data-wow-delay="0.2s">
+                    <div class="right-15px h-100 w-100   bottom-minus-40px w-75 lg-bottom-minus-50px xs-bottom-minus-25px"
+                        data-parallax-layout-ratio="1.1">
+                        <img src="../images/download (1).png" class="w-100" alt="" />
+                    </div>
+                    <div class="w-50 overflow-hidden position-relative md-w-50">
+                        <img src="../images/4a3f8fa7-f85e-4357-af88-63bf6c2c5b91.jfif" class="w-20" alt="" />
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-5 offset-lg-1 col-md-10 wow animate__fadeIn" data-wow-delay="0.4s">
+                    <div class="alt-font font-weight-500 margin-30px-bottom d-flex"><span
+                            class="flex-shrink-0 w-30px h-1px  opacity-7 align-self-center margin-20px-right"
+                            style="background-color: #f19202;"></span>
+                        <div class="flex-grow-1"><span style="color: #f19202;">About the Entrepreneurship Club</span>
+                        </div>
+                    </div>
+                    <h5
+                        class="alt-font text-uppercase text-extra-dark-gray font-weight-700 w-85 margin-30px-bottom xl-w-100">
+                        What is the concept of entrepreneurship?</h5>
+                    <p class="w-75 xl-w-100">The term entrepreneurship refers to the concept of developing and managing
+                        business ventures for
+                        Earning profits by taking risks and taking many risks. Entrepreneurship can simply be defined as
+                        It is the desire to start a new business, and it is mentioned that entrepreneurship plays a
+                        fundamental and vital role in development.
+                        economics of the global market.
+                    </p>
+                    <a href="https://mawdoo3.com/%D9%85%D8%A7_%D9%87%D9%8A_%D8%B1%D9%8A%D8%A7%D8%AF%D8%A9_%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84"
+                        class="btn my--btn my-btn-color fs-5 btn-large  margin-20px-top"
+                        style="background-color: #9461a6;">to know more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="wow animate__fadeIn" id="activities">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 text-center margin-4-rem-bottom sm-margin-3-rem-bottom">
+                    <h4 class="alt-font cd-headline loading-bar text-extra-dark-gray margin-seven-bottom">
+                        <span class="cd-words-wrapper text-base-color font-weight-500">
+                            <b class="is-visible">Entrepreneurship club activities</b>
+
+                        </span>
+                    </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="col-12 col-lg-8 blog-content padding-50px-right d-flex flex-wrap align-items-start md-padding-15px-right md-margin-70px-bottom sm-margin-50px-bottom">
+                    <!-- start post item -->
+                    <div class="col-12 blog-post-content bg-white border-all border-color-medium-gray p-0 text-center">
+                        <div class="blog-image"><a href="blog-post-layout-03.html"><img
+                                    src="../images/latest-news-img10.jpg" alt="" /></a></div>
+                        <div class="blog-text d-inline-block w-100">
+                            <div
+                                class="content padding-5-half-rem-all lg-padding-4-half-rem-all xs-padding-20px-lr xs-padding-40px-tb position-relative mx-auto w-90 lg-w-100">
+                                <div class="blog-details-overlap text-small font-weight-500  alt-font text-white text-uppercase"
+                                    style="background-color: #9461a6;"><a href="blog-classic.html" class="text-white">05
+                                        September 2018</a> <span class="margin-5px-lr">•</span> <a
+                                        href="blog-classic.html" class="text-white">Sites Design</a></div>
+                                <h6 class="alt-font font-weight-500"><a href="blog-post-layout-03.html"
+                                        class="text-extra-dark-gray text-fast-blue-hover">The main address of the
+                                        activity or
+                                        the news</a></h6>
+                                <p>Content</p>
+                                <a href="blog-post-layout-03.html"
+                                    class="btn btn-large my--btn my-btn-color btn-slide-up-bg margin-10px-top"
+                                    style="background-color: #9461a6;">to know more </a>
+                            </div>
+                            <div
+                                class="row row-cols-1 author border-top border-color-extra-medium-gray text-medium-gray text-extra-small text-uppercase alt-font m-0">
+                                <div
+                                    class="col col-sm blog-hover-btn padding-20px-tb border-right border-color-extra-medium-gray xs-no-border-right xs-border-bottom">
+                                    <a href="blog-classic.html"><i class="far fa-user blog-icon"></i><i
+                                            class="far fa-user blog-icon blog-icon-hover text-sky-blue"></i>03
+                                        مشاركه</a>
+                                </div>
+                                <div
+                                    class="col col-sm blog-hover-btn padding-20px-tb border-right border-color-extra-medium-gray xs-no-border-right xs-border-bottom">
+                                    <a href="blog-post-layout-03.html"><i class="far fa-heart blog-icon"></i><i
+                                            class="far fa-heart blog-icon blog-icon-hover text-sky-blue"></i>05
+                                        like</a>
+                                </div>
+                                <div class="col col-sm blog-hover-btn padding-20px-tb">
+                                    <a href="blog-post-layout-03.html"><i class="far fa-comment blog-icon"></i><i
+                                            class="far fa-comment blog-icon blog-icon-hover text-sky-blue"></i>23
+                                        comment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end post item -->
+                </div>
+                <div class="col-12 col-lg-4 blog-sidebar">
+                    <ul class="blog-widget position-relative">
+                        <!-- start post item -->
+                        <li>
+                            <div class="d-flex border-bottom border-color-extra-light-gray padding-30px-bottom">
+                                <figure class="flex-shrink-0">
+                                    <a href="blog-post-layout-03.html"><img src="../images/latest-news-img12.jpg"
+                                            alt=""></a>
+                                </figure>
+                                <div class="media-body flex-grow-1">
+                                    <a href="blog-classic.html"
+                                        class="text-extra-small alt-font d-block margin-5px-bottom">11 February 2019</a>
+                                    <a href="blog-post-layout-03.html"
+                                        class="alt-font font-weight-500 text-extra-dark-gray margin-5px-bottom d-block line-height-22px">Tools
+                                        i use to learn, work and travel...</a>
+                                    <span class="text-extra-small alt-font">By <a href="blog-classic.html">Stefano
+                                            Shane</a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end post item -->
+                        <!-- start post item -->
+                        <li>
+                            <div class="d-flex border-bottom border-color-extra-light-gray padding-30px-tb">
+                                <figure class="flex-shrink-0">
+                                    <a href="blog-post-layout-03.html"><img src="../images/latest-news-img11.jpg"
+                                            alt=""></a>
+                                </figure>
+                                <div class="media-body flex-grow-1">
+                                    <a href="blog-classic.html"
+                                        class="text-extra-small alt-font d-block margin-5px-bottom">15 February 2019</a>
+                                    <a href="blog-post-layout-03.html"
+                                        class="alt-font font-weight-500 text-extra-dark-gray margin-5px-bottom d-block line-height-22px">Without
+                                        good design it’s easy to miss the mark...</a>
+                                    <span class="text-extra-small alt-font">By <a href="blog-classic.html">Colene
+                                            Landin</a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end post item -->
+                        <!-- start post item -->
+                        <li>
+                            <div class="d-flex border-bottom border-color-extra-light-gray padding-30px-tb">
+                                <figure class="flex-shrink-0">
+                                    <a href="blog-post-layout-03.html"><img src="../images/latest-news-img13.jpg"
+                                            alt=""></a>
+                                </figure>
+                                <div class="media-body flex-grow-1">
+                                    <a href="blog-classic.html"
+                                        class="text-extra-small alt-font d-block margin-5px-bottom">25 February 2019</a>
+                                    <a href="blog-post-layout-03.html"
+                                        class="alt-font font-weight-500 text-extra-dark-gray margin-5px-bottom d-block line-height-22px">Everybody
+                                        can be great because anybody can...</a>
+                                    <span class="text-extra-small alt-font">By <a href="blog-classic.html">Eugene
+                                            Mehl</a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end post item -->
+                        <!-- start post item -->
+                        <li>
+                            <div class="d-flex border-bottom border-color-extra-light-gray padding-30px-tb">
+                                <figure class="flex-shrink-0">
+                                    <a href="blog-post-layout-03.html"><img src="../images/latest-news-img16.jpg"
+                                            alt=""></a>
+                                </figure>
+                                <div class="media-body flex-grow-1">
+                                    <a href="blog-classic.html"
+                                        class="text-extra-small alt-font d-block margin-5px-bottom">23 January 2019</a>
+                                    <a href="blog-post-layout-03.html"
+                                        class="alt-font font-weight-500 text-extra-dark-gray margin-5px-bottom d-block line-height-22px">Styles
+                                        come and go design is a language...</a>
+                                    <span class="text-extra-small alt-font">By <a href="blog-classic.html">Daysi
+                                            Moss</a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end post item -->
+                        <!-- start post item -->
+                        <li>
+                            <div class="d-flex border-bottom border-color-extra-light-gray padding-30px-tb">
+                                <figure class="flex-shrink-0">
+                                    <a href="blog-post-layout-03.html"><img src="../images/latest-news-img14.jpg"
+                                            alt=""></a>
+                                </figure>
+                                <div class="media-body flex-grow-1">
+                                    <a href="blog-classic.html"
+                                        class="text-extra-small alt-font d-block margin-5px-bottom">18 January 2019</a>
+                                    <a href="blog-post-layout-03.html"
+                                        class="alt-font font-weight-500 text-extra-dark-gray margin-5px-bottom d-block line-height-22px">Design
+                                        is inherently optimistic power...</a>
+                                    <span class="text-extra-small alt-font">By <a href="blog-classic.html">Ming
+                                            Furry</a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end post item -->
+                        <!-- start post item -->
+                        <li>
+                            <div class="d-flex padding-30px-top">
+                                <figure class="flex-shrink-0">
+                                    <a href="blog-post-layout-03.html"><img src="../images/latest-news-img15.jpg"
+                                            alt=""></a>
+                                </figure>
+                                <div class="media-body flex-grow-1">
+                                    <a href="blog-classic.html"
+                                        class="text-extra-small alt-font d-block margin-5px-bottom">19 December 2019</a>
+                                    <a href="blog-post-layout-03.html"
+                                        class="alt-font font-weight-500 text-extra-dark-gray margin-5px-bottom d-block line-height-20px">Alone
+                                        we can do so little together we can do...</a>
+                                    <span class="text-extra-small alt-font">By <a href="blog-classic.html">Marleen
+                                            Shorter</a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end post item -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="fix-background padding-100px-tb md-padding-75px-tb sm-padding-50px-tb"
+        style="background-image:url('../images/home-corporate-img-05.jpg');">
+        <div class="opacity-medium bg-dark-slate-blue"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+
+                <div class="col-12 col-xl-5 col-md-4 position-relative text-center   text-md-end">
+                    <a href="event.html" class="btn my--btn my-btn-color btn-large fs-4"
+                        style="background-color: #9461a6;">click here</a>
+                </div>
+                <div
+                    class="col-12 col-xl-7 col-md-8 col-sm-10 position-relative text-center text-md-start sm-margin-30px-bottom">
+                    <h4 class=" font-weight-500 text-white mb-0">To find out more about the events and activities of the
+                        Entrepreneurship Club
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="big-section">
+        <div class="text-center">
+            <h4 class="alt-font cd-headline loading-bar text-extra-dark-gray margin-seven-bottom">
+                <span class="cd-words-wrapper text-base-color font-weight-500">
+                    <b class="is-visible">Entrepreneurship club members</b>
+
+                </span>
+            </h4>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="swiper-container black-move swiper-pagination-bottom"
+                        data-slider-options='{ "loop": true, "slidesPerView": 1, "spaceBetween": 30, "observer": true, "observeParents": true, "autoplay": { "delay": 4500, "disableOnInteraction": false }, "pagination": { "el": ".swiper-pagination", "clickable": true, "dynamicBullets": true }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 4 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } } }'>
+                        <div class="swiper-wrapper">
+                            <!-- start team member slider item -->
+                            <div class="swiper-slide">
+                                <div class="team-style-01 text-center">
+                                    <figure class="border-radius-5px">
+                                        <div class="team-member-image">
+                                            <img alt="" src="news/000o.jpeg">
+                                            <div
+                                                class="team-overlay bg-transparent-gradient-sky-blue-pink border-radius-5px">
+                                            </div>
+                                        </div>
+                                        <figcaption
+                                            class="align-items-center justify-content-center d-flex flex-column padding-20px-lr padding-30px-tb">
+                                            <span class="team-title d-block alt-font text-white">Dr. Amr Massad
+                                                Saber</span>
+                                            <span
+                                                class="team-sub-title text-small d-block text-white text-uppercase">doctor
+                                                Department of Mathematics and Computer, Faculty of Science,
+                                                Menoufia</span>
+                                            <div class="social-icon w-100 position-absolute bottom-30px left-0px">
+                                                <a href="https://www.facebook.com/" target="_blank"
+                                                    class="text-white"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="https://www.instagram.com/" target="_blank"
+                                                    class="text-white"><i class="fab fa-instagram"></i></a>
+                                                <a href="https://twitter.com/" target="_blank" class="text-white"><i
+                                                        class="fab fa-twitter"></i></a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- end team member slider item -->
+                            <!-- start team member slider item -->
+                            <div class="swiper-slide">
+                                <div class="team-style-01 text-center">
+                                    <figure class="border-radius-5px">
+                                        <div class="team-member-image">
+                                            <img alt="" src="news/pppo.jpeg">
+                                            <div
+                                                class="team-overlay bg-transparent-gradient-sky-blue-pink border-radius-5px">
+                                            </div>
+                                        </div>
+                                        <figcaption
+                                            class="align-items-center justify-content-center d-flex flex-column padding-20px-lr padding-30px-tb">
+                                            <span class="team-title d-block alt-font text-white">Bryan Jonhson</span>
+                                            <span
+                                                class="team-sub-title text-small d-block text-white text-uppercase">Manager</span>
+                                            <div class="social-icon w-100 position-absolute bottom-30px left-0px">
+                                                <a href="https://www.facebook.com/" target="_blank"
+                                                    class="text-white"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="https://www.instagram.com/" target="_blank"
+                                                    class="text-white"><i class="fab fa-instagram"></i></a>
+                                                <a href="https://twitter.com/" target="_blank" class="text-white"><i
+                                                        class="fab fa-twitter"></i></a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- end team member slider item -->
+                            <!-- start team member slider item -->
+                            <div class="swiper-slide">
+                                <div class="team-style-01 text-center">
+                                    <figure class="border-radius-5px">
+                                        <div class="team-member-image">
+                                            <img alt="" src="news/twoo.jpeg">
+
+                                            <div
+                                                class="team-overlay bg-transparent-gradient-sky-blue-pink border-radius-5px">
+                                            </div>
+                                        </div>
+                                        <figcaption
+                                            class="align-items-center justify-content-center d-flex flex-column padding-20px-lr padding-30px-tb">
+                                            <span class="team-title d-block alt-font text-white">Dr. Eman Nassar</span>
+                                            <span
+                                                class="team-sub-title text-small d-block text-white text-uppercase">female
+                                                doctor
+                                                Department of Mathematics and Computer, Faculty of Science,
+                                                Menoufia</span>
+                                            <div class="social-icon w-100 position-absolute bottom-30px left-0px">
+                                                <a href="https://www.facebook.com/" target="_blank"
+                                                    class="text-white"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="https://www.instagram.com/" target="_blank"
+                                                    class="text-white"><i class="fab fa-instagram"></i></a>
+                                                <a href="https://twitter.com/" target="_blank" class="text-white"><i
+                                                        class="fab fa-twitter"></i></a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- end team member slider item -->
+                            <!-- start team member slider item -->
+                            <div class="swiper-slide">
+                                <div class="team-style-01 text-center">
+                                    <figure class="border-radius-5px">
+                                        <div class="team-member-image">
+                                            <img alt="" src="news/two0.jpeg">
+                                            <div
+                                                class="team-overlay bg-transparent-gradient-sky-blue-pink border-radius-5px">
+                                            </div>
+                                        </div>
+                                        <figcaption
+                                            class="align-items-center justify-content-center d-flex flex-column padding-20px-lr padding-30px-tb">
+                                            <span class="team-title d-block alt-font text-white">Dr. Mariana
+                                                Barsoum</span>
+                                            <span
+                                                class="team-sub-title text-small d-block text-white text-uppercase">female
+                                                doctor
+                                                Department of Mathematics and Computer, Faculty of Science,
+                                                Menoufia</span>
+                                            <div class="social-icon w-100 position-absolute bottom-30px left-0px">
+                                                <a href="https://www.facebook.com/" target="_blank"
+                                                    class="text-white"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="https://www.instagram.com/" target="_blank"
+                                                    class="text-white"><i class="fab fa-instagram"></i></a>
+                                                <a href="https://twitter.com/" target="_blank" class="text-white"><i
+                                                        class="fab fa-twitter"></i></a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- end team member slider item -->
+
+                        </div>
+                        <!-- start slider pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- end slider pagination -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="bg-extra-dark-gray fancy-box-background big-section cover-background  p-0 wow animate__fadeIn"
+        style="background-image: url('../images/contact-us-modern-03.jpg');">
+        <div class="opacity-very-light opacity-3 bg-extra-dark-gray"></div>
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-xl-4 row-cols-sm-2 align-items-center justify-content-center">
+                <!-- start fancy text box item -->
+                <div class="col p-0 fancy-box-item border-right border-color-dark-white-transparent lg-border-bottom xs-no-border-right wow animate__fadeIn"
+                    data-wow-delay="0.2s">
+                    <div class="bg-banner-image cover-background"
+                        style="background-image: url(../images/contact-us-modern-01.jpg)">
+                        <div class="opacity-very-light opacity-3 bg-black"></div>
+                    </div>
+                    <div class="fancy-text-box h-800px fancy-text-box-style-03 xl-h-500px xs-h-250px">
+                        <div
+                            class="fancy-text-content padding-5-rem-lr padding-4-half-rem-tb xl-padding-2-rem-lr xl-padding-1-half-rem-tb lg-padding-4-rem-all">
+                            <h6
+                                class="alt-font font-weight-600 text-white text-uppercase margin-20px-bottom w-80 xl-w-100 lg-w-60 md-w-80">
+                                To join the Entrepreneurship Club for Menoufia University students</h6>
+                            <div class="fancy-text-box-bottom justify-content-center">
+                                <div class="d-flex">
+                                    <p class="m-0 align-self-center w-75 text-white opacity-6"> To join Naderi Riyada
+                                        Business at Menoufia University for Menoufia University students, click here.
+                                    </p>
+                                    <span class="align-self-center text-center ms-auto"><a href="#contact-form"
+                                            class="d-inline-block line-height-40px rounded-circle bg-extra-dark-gray h-40px w-40px popup-with-form"><i
+                                                class="feather icon-feather-arrow-right text-white "></i></a>
+                                        <form id="contact-form"
+                                            action="https://lithohtml.themezaa.com/email-templates/contact-form.php"
+                                            method="post"
+                                            class="white-popup-block col-xl-4 col-lg-7 col-sm-9  p-0 mx-auto mfp-hide">
+                                            <div
+                                                class="padding-fifteen-all bg-dark border-radius-6px xs-padding-six-all">
+                                                <h6
+                                                    class="text-white font-weight-500 margin-35px-bottom xs-margin-15px-bottom">
+                                                    To join the Entrepreneurship Club, register here</h6>
+                                                <div>
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px required"
+                                                        type="text" name="name" placeholder="full name" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px required"
+                                                        type="email" name="email" placeholder="e-mail" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px"
+                                                        type="tel" name="phone" placeholder="phone number" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px"
+                                                        type="text" name="name" placeholder="University Name" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px"
+                                                        type="text" name="name" placeholder="Specialization " />
+
+                                                    <input type="hidden" name="redirect" value="">
+                                                    <button
+                                                        class="btn my--btn my-btn-color btn-small btn-fancy  mb-0 submit"
+                                                        type="submit"
+                                                        style="background-color:  #9461a6; color: white;">registration</button>
+                                                    <div class="form-results d-none"></div>
+
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay " style="background-color:  #f19202;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end fancy text box item -->
+                <!-- start fancy text box item -->
+                <div class="col p-0 fancy-box-item border-right border-color-dark-white-transparent lg-border-bottom lg-no-border-right wow animate__fadeIn"
+                    data-wow-delay="0.4s">
+                    <div class="bg-banner-image cover-background"
+                        style="background-image: url(../images/contact-us-modern-02.jpg)">
+                        <div class="opacity-very-light opacity-3 bg-extra-dark-gray"></div>
+                    </div>
+                    <div class="fancy-text-box h-800px fancy-text-box-style-03 xl-h-500px xs-h-250px">
+                        <div
+                            class="fancy-text-content padding-5-rem-lr padding-4-half-rem-tb xl-padding-2-rem-lr xl-padding-1-half-rem-tb lg-padding-4-rem-all">
+                            <h6
+                                class="alt-font font-weight-600 text-white text-uppercase margin-20px-bottom w-80 xl-w-100 lg-w-60 md-w-80">
+                                To join the Entrepreneurship Club for students of other universities</h6>
+                            <div class="fancy-text-box-bottom justify-content-center">
+                                <div class="d-flex">
+                                    <p class="m-0 align-self-center w-75  text-white opacity-6">To join the leadership
+                                        club
+                                        Business for other university students click here</p>
+                                    <span class="align-self-center text-center ms-auto"><a href="#contact-form1"
+                                            class="d-inline-block line-height-40px rounded-circle bg-extra-dark-gray h-40px w-40px popup-with-form"><i
+                                                class="feather icon-feather-arrow-right text-white"></i></a>
+                                        <form id="contact-form1"
+                                            action="https://lithohtml.themezaa.com/email-templates/contact-form.php"
+                                            method="post"
+                                            class="white-popup-block col-xl-4 col-lg-7 col-sm-9  p-0 mx-auto mfp-hide">
+                                            <div
+                                                class="padding-fifteen-all bg-dark border-radius-6px xs-padding-six-all">
+                                                <h6
+                                                    class="text-white font-weight-500 margin-35px-bottom xs-margin-15px-bottom">
+                                                    To join the Entrepreneurship Club, register here</h6>
+                                                <div>
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px required"
+                                                        type="text" name="name" placeholder="full name" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px required"
+                                                        type="email" name="email" placeholder="e-mail" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px"
+                                                        type="tel" name="phone" placeholder="phone number" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px"
+                                                        type="text" name="name" placeholder="University Name" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px"
+                                                        type="text" name="name" placeholder="Specialization " />
+
+                                                    <input type="hidden" name="redirect" value="">
+                                                    <button
+                                                        class="btn my--btn my-btn-color btn-small btn-fancy  mb-0 submit"
+                                                        type="submit"
+                                                        style="background-color:  #9461a6; color: white;">registration</button>
+                                                    <div class="form-results d-none"></div>
+
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay " style="background-color:  #f19202;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end fancy text box item -->
+                <!-- start fancy text box item -->
+                <div class="col p-0 fancy-box-item border-right border-color-dark-white-transparent sm-border-bottom xs-no-border-right wow animate__fadeIn"
+                    data-wow-delay="0.6s">
+                    <div class="bg-banner-image cover-background"
+                        style="background-image: url(../images/contact-us-modern-03.jpg)">
+                        <div class="opacity-very-light opacity-3 bg-extra-dark-gray"></div>
+                    </div>
+                    <div class="fancy-text-box h-800px fancy-text-box-style-03 xl-h-500px xs-h-250px">
+                        <div
+                            class="fancy-text-content padding-5-rem-lr padding-4-half-rem-tb xl-padding-2-rem-lr xl-padding-1-half-rem-tb lg-padding-4-rem-all">
+                            <h6
+                                class="alt-font font-weight-600 text-white text-uppercase margin-20px-bottom w-80 xl-w-100 lg-w-60 md-w-80">
+                                To join the Entrepreneurship Club for the teaching staff</h6>
+                            <div class="fancy-text-box-bottom justify-content-center">
+                                <div class="d-flex">
+                                    <p class="m-0 align-self-center w-75  text-white opacity-6">To join the leadership
+                                        club
+                                        Business for faculty members at Menoufia University, click here</p>
+                                    <span class="align-self-center text-center ms-auto"><a href="#contact-form2"
+                                            class="d-inline-block line-height-40px rounded-circle bg-extra-dark-gray h-40px w-40px popup-with-form"><i
+                                                class="feather icon-feather-arrow-right text-white"></i></a>
+                                        <form id="contact-form2"
+                                            action="https://lithohtml.themezaa.com/email-templates/contact-form.php"
+                                            method="post"
+                                            class="white-popup-block col-xl-4 col-lg-7 col-sm-9  p-0 mx-auto mfp-hide">
+                                            <div
+                                                class="padding-fifteen-all bg-dark border-radius-6px xs-padding-six-all">
+                                                <h6
+                                                    class="text-white font-weight-500 margin-35px-bottom xs-margin-15px-bottom">
+                                                    To join the Entrepreneurship Club, register here</h6>
+                                                <div>
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px required"
+                                                        type="text" name="name" placeholder="full name" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px required"
+                                                        type="email" name="email" placeholder="e-mail" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px"
+                                                        type="tel" name="phone" placeholder="phone number" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px"
+                                                        type="text" name="name" placeholder="University Name" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px"
+                                                        type="text" name="name" placeholder="Specialization " />
+
+                                                    <input type="hidden" name="redirect" value="">
+                                                    <button
+                                                        class="btn my--btn my-btn-color btn-small btn-fancy  mb-0 submit"
+                                                        type="submit"
+                                                        style="background-color:  #9461a6; color: white;">registration</button>
+                                                    <div class="form-results d-none"></div>
+
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay " style="background-color: #f19202;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end fancy text box item -->
+                <!-- start fancy text box item -->
+                <div class="col p-0 fancy-box-item wow animate__fadeIn" data-wow-delay="0.8s">
+                    <div class="bg-banner-image cover-background"
+                        style="background-image: url( group-business-people-work-blackwhite-260nw-1150026581.webp)">
+                        <div class="opacity-very-light opacity-3 bg-extra-dark-gray"></div>
+                    </div>
+                    <div class="fancy-text-box h-800px fancy-text-box-style-03 xl-h-500px xs-h-250px">
+                        <div
+                            class="fancy-text-content padding-5-rem-lr padding-4-half-rem-tb xl-padding-2-rem-lr xl-padding-1-half-rem-tb lg-padding-4-rem-all">
+                            <h6
+                                class="alt-font font-weight-600 text-white text-uppercase margin-20px-bottom w-80 xl-w-100 lg-w-60 md-w-80">
+                                To join the Entrepreneurship Club for factories and companies</h6>
+                            <div class="fancy-text-box-bottom justify-content-center">
+                                <div class="d-flex">
+                                    <p class="m-0 align-self-center w-75  text-white opacity-6">To join the leadership
+                                        club
+                                        Businesses for factories and companies, recording their problems and finding
+                                        appropriate solutions, click here.</p>
+                                    <span class="align-self-center text-center ms-auto"><a href="#contact-form3"
+                                            class="d-inline-block line-height-40px rounded-circle bg-extra-dark-gray h-40px w-40px popup-with-form"><i
+                                                class="feather icon-feather-arrow-right text-white"></i></a>
+                                        <form id="contact-form3"
+                                            action="https://lithohtml.themezaa.com/email-templates/contact-form.php"
+                                            method="post"
+                                            class="white-popup-block col-xl-4 col-lg-7 col-sm-9  p-0 mx-auto mfp-hide">
+                                            <div
+                                                class="padding-fifteen-all bg-dark border-radius-6px xs-padding-six-all">
+                                                <h6
+                                                    class="text-white font-weight-500 margin-35px-bottom xs-margin-15px-bottom">
+                                                    To join the Entrepreneurship Club, register here</h6>
+                                                <div>
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px required"
+                                                        type="text" name="name" placeholder="full name" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px required"
+                                                        type="email" name="email" placeholder="e-mail" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px"
+                                                        type="tel" name="phone" placeholder="phone number" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px"
+                                                        type="text" name="name" placeholder="University Name" />
+                                                    <input
+                                                        class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px"
+                                                        type="text" name="name" placeholder="Specialization " />
+
+                                                    <input type="hidden" name="redirect" value="">
+                                                    <button
+                                                        class="btn my--btn my-btn-color btn-small btn-fancy  mb-0 submit"
+                                                        type="submit"
+                                                        style="background-color:  #9461a6; color: white;">registration</button>
+                                                    <div class="form-results d-none"></div>
+
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay " style="background-color: #f19202;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end fancy text box item -->
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start footer -->
+    <footer class="footer-section">`
+        <div class="container">
+            <div class="footer-cta py-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Where are we?</h4>
+                                <span>Menoufia Governorate, Shebin El-Kom</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Connect with us</h4>
+                                <span>9876543210</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Email us</h4>
+                                <span>mnf-science.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-3">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <div class=" logo-footer d-inline-block">
+                                    <a href="index.html"><img src="image/logo-H-english.png" style="max-height: 90px;"
+                                            class="img-fluid" alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>follow us </span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Important sites</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">Energies and Abilities</a></li>
+                                <li><a href="#">Intellectual property rights</a></li>
+                                <li><a href="#">Finance and relationships the public</a></li>
+                                <li><a href="#">Entrepreneurship Club</a></li>
+                                <li><a href="#">connect us</a></li>
+                                <li><a href="#">latest news</a></li>
+                                <li><a href="#">Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe us</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don't forget to subscribe to know the latest news</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="E-mail">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-6 text-center ">
+                        <div class="copyright-text text-center">
+                            <p>Copyright &copy; 2023 archived at Menoufia University </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start scroll to top -->
+    <a class="scroll-top-arrow" href="javascript:void(0);"><i class="feather icon-feather-arrow-up"></i></a>
+    <!-- end scroll to top -->
+
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/theme-vendors.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>
