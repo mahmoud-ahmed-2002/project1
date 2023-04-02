@@ -29,6 +29,14 @@ body {
     right: 0 !important;
 }
 
+.header-language.dropdown-style-01 .btn{
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 0px;
+}
+.header-language.dropdown-style-01 .dropdown-menu {
+    right: auto !important;
+    left: 0px !important;
+}
 /* ---------- --------------- footer english ------------ ------------- */
 
 .single-cta i {
