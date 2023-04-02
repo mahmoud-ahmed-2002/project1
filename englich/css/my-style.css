@@ -66,6 +66,7 @@ body {
 
 .subscribe-form button {
     right: 0;
+    left: auto;
 }
 
 .footer-menu li {
