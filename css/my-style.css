@@ -148,6 +148,33 @@ header .top-navbar ::before{
 .no-margin-left{
     margin-left: 5px !important;
 }
+
+/* ------ ---------- ---------- navbar scroll ----------- ------------- ------------  */
+.nav-scroll .navbar .navbar-nav .nav-link{
+    font-size: 14px;
+    padding: 0;
+    margin: 0 8px;
+}
+.nav-item.dropdown.megamenu .menu-back-div ul[class*="d-"]:last-child{
+    padding-right: 0px;
+}
+.nav-item.dropdown.megamenu .menu-back-div{
+    padding: 10px 5px;
+}
+.nav-scroll {
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .7s;
+}
+.nav-scroll.scroll {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
 /* ------ ---------- ---------- footer ----------- ------------- ------------  */
 .footer-section {
     background-color: #202020;

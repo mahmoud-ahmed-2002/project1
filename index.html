@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/my-style.css">
 
 </head>
 <style>
@@ -35,91 +36,170 @@
 
 <body data-mobile-nav-style="classic" style="direction: rtl;">
     <!-- start header -->
-    <header class="header-with-topbar">
-        <div class="top-bar bg-light-cream border-bottom border-color-black-transparent d-none d-md-inline-block">
-            <div class="container-fluid nav-header-container">
-                <div class="col-12 col-sm-12 col-lg-8 mx-lg-auto text-center d-flex align-items-center justify-content-between">
-                    <div class="col d-lg-none d-flex ms-0 me-auto border-0 p-0">
-                        <button class="navbar-toggler float-end ms-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
+    <nav
+        class="navbar no-sticky navbar-expand-lg navbar-light bg-white header-light header-reverse-scroll top-logo z-index-2 header">
+        <div class="container-fluid flex-wrap nav-header-container">
+            <div
+                class=" col-12 col-sm-12 col-lg-8 mx-lg-auto text-center d-flex align-items-center justify-content-between">
+                <a class="col navbar-brand padding-15px-tb mx-auto px-0" href="index.html">
+                    <img src="uni_ar.png" style="width: 195px" class="default-logo" alt="" />
+                </a>
+                <a class="col navbar-brand padding-15px-tb mx-auto px-0" href="index.html">
+                    <img src="logo-H.png" style="width: 195px" class="default-logo mx-5" alt="" />
+                </a>
+                <a class="col navbar-brand padding-15px-tb mx-auto px-0" href="index.html">
+                    <img src="tico-logo.png" style="width: 95px" class="default-logo " alt="" />
+                </a>
+                <div class="col d-flex align-items-center justify-content-end text-extra-dark-gray ms-auto p-0">
+                    <div class="header-language btn-group dropdown-style-01 d-lg-inline-block">
+                        <button type="button" class="btn dropdown-toggle sm-w-100 main-font" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <span class="icon-country no-margin-left"><img src="images/country-flag-16X16/egypt.png"
+                                    alt="" /></span>Ar<span class="caret"></span><i class="fas fa-angle-down"></i>
                         </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="javascript:void(0);" title="English"><span class="icon-country"><img
+                                            src="images/country-flag-16X16/egypt.png" alt="" /></span>Arabic</a>
+                            </li>
+                            <li>
+                                <a href="englich/index.html" title="English"><span class="icon-country"><img
+                                            src="images/country-flag-16X16/usa.png" alt="" /></span>English</a>
+                            </li>
+                        </ul>
                     </div>
-                    <a class="navbar-brand" href="">
-                        <div class=" d-inline-block ">
-                            <div class=" container">
-                                <div class="row">
-                                    <div class=" col-4">
-                                        <img src="uni_ar.png"  style="width: 195px;" class="default-logo " alt="">
-                                    </div>
-                                    <div class=" col-4">
-                                        <img src="logo-H.png"  style="width: 195px;" class="default-logo mx-5" alt="">
-                                    </div>
-                                    <div class=" col-4">
-                                        <img src="tico-logo.png"  style="width: 95px;" class="default-logo mx-5" alt="">                                      
-                                    </div>
+                </div>
+                <div class="col d-lg-none d-flex ms-0 me-auto border-0 p-0">
+                    <button class="navbar-toggler float-end ms-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-auto col-lg-12 menu-order border-top border-color-black-transparent md-border-none">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav alt-font">
+                        <li class="nav-item dropdown megamenu">
+                            <a href="index.html" class="nav-link active"><span>الرئيسية</span></a>
+                        </li>
+                        <li class="nav-item dropdown simple-dropdown">
+                            <a href="about.html" class="nav-link"><span>عن النادى</span></a>
+                        </li>
+                        <li class="nav-item dropdown simple-dropdown">
+                            <a href="generating energies.html" class="nav-link"><span>تسجيل
+                                    الطاقات والقدرات </span></a>
+                        </li>
+                        <li class="nav-item dropdown megamenu">
+                            <a href="Intellectual property rights.html" class="nav-link"><span>حقوق
+                                    الملكية الفكرية</span></a>
+                        </li>
+                        <li class="nav-item dropdown simple-dropdown">
+                            <a href="course.html" class="nav-link"><span>الدورات التدريبية
+                                </span></a>
+                        </li>
+                        <li class="nav-item dropdown megamenu">
+                            <a href="Finance and public relations.html" class="nav-link"><span>التمويل
+                                    والعلاقات العامة</span></a>
+                            <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-hidden="true"></i>
+                            <div class="menu-back-div dropdown-menu megamenu-content" role="menu">
+                                <div class="d-lg-flex justify-content-center">
+                                    <ul class="d-lg-inline-block md-margin-15px-bottom">
+                                        <li class="dropdown-header">
+                                            <a href="Legal-advice.html">الاستشارات القانونية</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                    </a>  
+                        </li>
+                        <li class="nav-item dropdown simple-dropdown">
+                            <a href="Entrepreneurship Club.html" class="nav-link"><span>نادى
+                                    ريادة الاعمال </span></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!-- start navigation -->
-        <nav class="navbar navbar-expand-lg top-space navbar-light bg-white header-light fixed-top header-reverse-scroll menu-logo-center">
-            <div class="container-lg nav-header-container">
-                <div class="col-auto col-lg-12 menu-order border-top border-color-black-transparent md-border-none">
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav alt-font">
-                            <li class="nav-item dropdown megamenu">
-                                <a href="index.html" class="nav-link active"><span>الرئيسية</span></a>
-                            </li>
-                            <li class="nav-item dropdown simple-dropdown">
-                                <a href="about.html" class="nav-link"><span>عن المركز</span></a>
-                            </li>
-                            <li class="nav-item dropdown simple-dropdown">
-                                <a href="generating energies.html" class="nav-link"><span>تسجيل الطاقات والقدرات
-                                    </span></a>
-                            </li>
-                            <li class="nav-item dropdown megamenu">
-                                <a href="Intellectual property rights.html" class="nav-link"><span>حقوق الملكيه
-                                        الفكريه</span></a>
-                            </li>
-                            <li class="nav-item dropdown simple-dropdown">
-                                <a href="course.html" class="nav-link"><span>الدورات التدريبية </span></a>
-                            </li>
-                            <li class="nav-item dropdown simple-dropdown">
-                                <a href="Finance and public relations.html" class="nav-link"><span>التمويل
-                                        والعلاقات
-                                        العامة</span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li class="dropdown"><a href="Legal-advice.html">الاستشارات القانونية</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown simple-dropdown">
-                                <a href="Entrepreneurship Club.html" class="nav-link"><span>نادى رياده الاعمال
-                                    </span></a>
-                            </li>
-                        </ul>
-                        <div class="col d-flex align-items-center justify-content-end text-extra-dark-gray ms-auto p-0">
-                            <div class="header-language btn-group dropdown-style-01 d-none d-lg-inline-block">
-                                <button type="button" class="btn dropdown-toggle sm-w-100 main-font" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="icon-country no-margin-left"><img src="images/country-flag-16X16/egypt.png" alt=""></span>Ar<span class="caret"></span> <i class="fas fa-angle-down"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="javascript:void(0);" title="English"><span class="icon-country"><img src="images/country-flag-16X16/egypt.png" alt=""></span>Arabic</a></li>
-                                    <li><a href="englich/index.html" title="English"><span class="icon-country"><img src="images/country-flag-16X16/usa.png" alt=""></span>English</a></li>
-                                </ul>
+    </nav>
+    <!-- --------------nav will apeard when scroll------------------  -->
+    <div class=" nav-scroll">
+        <nav
+            class="navbar no-sticky navbar-expand-lg navbar-light bg-white header-light header-reverse-scroll top-logo z-index-2">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="tico-logo.png" style="width: 95px" class="default-logo " alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown megamenu">
+                            <a href="index.html" class="nav-link active"><span>الرئيسية</span></a>
+                        </li>
+                        <li class="nav-item dropdown simple-dropdown">
+                            <a href="about.html" class="nav-link"><span>عن النادى</span></a>
+                        </li>
+                        <li class="nav-item dropdown simple-dropdown">
+                            <a href="generating energies.html" class="nav-link"><span>تسجيل
+                                    الطاقات والقدرات </span></a>
+                        </li>
+                        <li class="nav-item dropdown megamenu">
+                            <a href="Intellectual property rights.html" class="nav-link"><span>حقوق
+                                    الملكية الفكرية</span></a>
+                        </li>
+                        <li class="nav-item dropdown simple-dropdown">
+                            <a href="course.html" class="nav-link"><span>الدورات التدريبية
+                                </span></a>
+                        </li>
+                        <li class="nav-item dropdown megamenu">
+                            <a href="Finance and public relations.html" class="nav-link"><span>التمويل
+                                    والعلاقات العامة</span></a>
+                            <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-hidden="true"></i>
+                            <div class="menu-back-div dropdown-menu megamenu-content" role="menu">
+                                <div class="d-lg-flex justify-content-center">
+                                    <ul class="d-lg-inline-block md-margin-15px-bottom">
+                                        <li class="dropdown-header">
+                                            <a href="Legal-advice.html">الاستشارات القانونية</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+                        </li>
+                        <li class="nav-item dropdown simple-dropdown">
+                            <a href="Entrepreneurship Club.html" class="nav-link"><span>نادى
+                                    ريادة الاعمال </span></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <div class="header-language btn-group dropdown-style-01 d-lg-inline-block">
+                            <button type="button" class="btn dropdown-toggle sm-w-100 main-font"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="icon-country no-margin-left"><img src="images/country-flag-16X16/egypt.png"
+                                        alt="" /></span>Ar<span class="caret"></span><i class="fas fa-angle-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="javascript:void(0);" title="English"><span class="icon-country"><img
+                                                src="images/country-flag-16X16/egypt.png" alt="" /></span>Arabic</a>
+                                </li>
+                                <li>
+                                    <a href="englich/index.html" title="English"><span class="icon-country"><img
+                                                src="images/country-flag-16X16/usa.png" alt="" /></span>English</a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </nav>
-        <!-- end navigation -->
-    </header>
+    </div>
     <!-- end header -->
     <!-- start section -->
     <section class="parallax bg-extra-dark-gray p-0 " data-parallax-background-ratio="0.5"
@@ -410,9 +490,11 @@
                 </div>
                 <!-- end services item -->
             </div>
-            <a href="blog-masonry.html" class="text-center fs-5 word mt-3">
-                <p>لمعرفه المزيد من الاخبار اضغط هنا</p>
-            </a>
+            <div class=" mt-5">
+                <a href="blog-masonry.html" class="text-center fs-5 word mt-3">
+                    <p>لمعرفه المزيد من الاخبار اضغط هنا</p>
+                </a>
+            </div>
         </div>
     </section>
     <!-- end section -->
@@ -546,12 +628,12 @@
                     <div class="row justify-content-center">
                         <!-- title -->
                         <div class="col-md-12 text-center">
-                            <h6 class="alt-font text-white font-weight-500">للتسجيل في نادي رياده الاعمال </h6>
+                            <h6 class="alt-font text-white font-weight-500">للتسجيل في نادي ريادة الاعمال </h6>
                         </div>
                         <!-- end title -->
                         <div class="col-12 col-xl-4 col-lg-8 col-md-10 text-center">
                             <h6 class="font-weight-200 margin-eight-bottom fs-5 sm-margin-30px-bottom"
-                                style="color: #ffffffab;">نادي رياده الاعمال هو العملية التي يتم من خلالها تحويل الأفكار
+                                style="color: #ffffffab;">نادي ريادة الاعمال هو العملية التي يتم من خلالها تحويل الأفكار
                                 العظيمة الى واقع يحقق الأرباح المادية والمعنوية لرائد الأعمال.</h6>
                             <a href="#contact-form"
                                 class="btn btn-medium btn-round-edge fs-5 my--btn my-btn-color  popup-with-form"
@@ -563,7 +645,7 @@
                                 <div class="padding-fifteen-all bg-white border-radius-6px xs-padding-six-all">
                                     <h6
                                         class="text-extra-dark-gray font-weight-500 margin-35px-bottom xs-margin-15px-bottom">
-                                        للانضمام اللي نادري رياده الاعمال سجل من هنا</h6>
+                                        للانضمام اللي نادري ريادة الاعمال سجل من هنا</h6>
                                     <div>
                                         <input class="medium-input margin-25px-bottom xs-margin-10px-bottom required"
                                             type="text" name="name" placeholder="الاسم بالكامل">
@@ -630,7 +712,7 @@
                         </div>
                         <div class="feature-box-content padding-15px-left">
                             <span
-                                class="alt-font text-extra-medium font-weight-500 margin-10px-bottom d-block text-white">دعم
+                                class="alt-font text-extra-medium font-weight-600 margin-10px-bottom d-block text-white">دعم
                                 عن طريق الدردشه</span>
                             <p class="text-white opacity-7 w-90 lg-w-100 margin-20px-bottom">للشكاوي والمقترحات
                                 والاستفسارات برجاء التواصل معنا.</p>
@@ -703,12 +785,12 @@
                                 <h3>مواقع هامه</h3>
                             </div>
                             <ul>
-                                <li><a href="about.html">عن المركز</a></li>
+                                <li><a href="about.html">عن النادى</a></li>
                                 <li><a href="generating energies.html">تسجيل الافكار</a></li>
-                                <li><a href="Intellectual property rights.html">حقوق الملكيه الفكريه</a></li>
+                                <li><a href="Intellectual property rights.html">حقوق الملكية الفكريه</a></li>
                                 <li><a href="Finance and public relations.html">التمويل والعلاقات</a></li>
-                                <li><a href="course.html"> الدورات التدريبيه</a></li>
-                                <li><a href="Entrepreneurship Club.html"> نادي رياده الاعمال</a></li>
+                                <li><a href="course.html"> الدورات التدربية</a></li>
+                                <li><a href="Entrepreneurship Club.html"> نادي ريادة الاعمال</a></li>
 
                             </ul>
                         </div>
@@ -753,6 +835,7 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/theme-vendors.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/my-main.js"></script>
 </body>
 
 </html>
