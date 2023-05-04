@@ -3,14 +3,6 @@
 
 $(document).ready(function () {
   $(".snipeer").fadeOut(3000);
-  // $(".snipeer").animate({
-  //   left:'50%',
-  //   right:'50%',
-  //   top:'50%',
-  //   bottom:'50%',
-  //   // "fast" 
-  // });
-
 });
 
 //  ---------------------- navbar scroll script 
