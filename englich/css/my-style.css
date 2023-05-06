@@ -2,6 +2,23 @@ body {
     text-transform: capitalize;
 }
 
+
+/* ----------- -------------- snipper ------------ -----------  */
+
+.snipeer {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 5;
+}
+
+.snipeer img {
+    width: 100%;
+    height: 100%;
+}
+
 /* ---------- --------------- navbar english ------------ ------------- */
 .navbar .navbar-nav .nav-link {
     font-weight: 500;
