@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="css/my-style.css" />
 </head>
 
-<body data-mobile-nav-style="classic">
+<body data-mobile-nav-style="classic" style="direction: rtl;" data-theme="light">
     <!-- start header -->
-    <nav
-        class="navbar no-sticky navbar-expand-lg navbar-light bg-white header-light header-reverse-scroll top-logo z-index-2 header">
+
+    <nav class=" navbar no-sticky navbar-expand-lg navbar-light bg-white header-light header-reverse-scroll top-logo
+            z-index-2 header">
         <div class="container-fluid flex-wrap nav-header-container">
             <div
                 class=" col-12 col-sm-12 col-lg-8 mx-lg-auto text-center d-flex align-items-center justify-content-between">
@@ -47,6 +48,11 @@
                                             src="images/country-flag-16X16/usa.png" alt="" /></span>English</a>
                             </li>
                         </ul>
+                    </div>
+                    <div class=" dark-light-mode">
+                        <button class="toggleDarkMode" type="button" onclick="toggleDarkMode()">
+                            <i class="fas fa-moon"></i>
+                        </button>
                     </div>
                 </div>
                 <div class="col d-lg-none d-flex ms-0 me-auto border-0 p-0">
@@ -679,7 +685,8 @@
                         <div class="col-12 col-xl-4 col-lg-8 col-md-10 text-center">
                             <h6 class="font-weight-200 margin-eight-bottom fs-5
                   sm-margin-30px-bottom" style="color: #ffffffab">
-                                نادي رياده الاعمال هو العملية التي يتم من خلالها تحويل الأفكار العظيمة الى واقع يحقق
+                                نادي رياده الاعمال هو العملية التي يتم من خلالها تحويل الأفكار العظيمة الى واقع
+                                يحقق
                                 الأرباح المادية والمعنوية لرائد الأعمال.
                             </h6>
                             <a href="#contact-form" class="btn btn-medium btn-round-edge

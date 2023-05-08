@@ -3,10 +3,17 @@
 :root {
     --main-color: #9461a6;
     --sec-color: #f19202;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --bs-white: #ffffff;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-white-rgb: 255,255,255;
+    --bs-black-rgb: 0,0,0;
 }
 
 ::selection {
-    color: #fff;
+    color: var(--color-white);
     background-color: var(--sec-color);
 }
 
@@ -24,7 +31,7 @@ ul {
 
 .my-btn {
     background-color: var(--main-color);
-    color: #fff;
+    color: var(--color-white);
     padding: 15px;
     border-radius: 5px;
     border: 2px solid var(--main-color);
@@ -75,6 +82,24 @@ header.sticky .navbar .navbar-brand .default-logo {
     height: 100%;
 }
 
+/* ----------- -------------- button toggle dark and light mode ----------- */
+
+.toggleDarkMode{
+    border: 0px;
+    background-color: transparent;
+}
+
+[data-theme="dark"] {
+    --main-color: #9461a6;
+    --sec-color: #f19202;
+    --color-white: #000;
+    --color-black: #fff;
+    --bs-white: #000;
+    --bs-light: #212529;
+    --bs-dark: #f8f9fa;
+    --bs-white-rgb: 0,0,0;
+    --bs-black-rgb: 225,225,225;
+}
 
 /* ----------- -------------- page scroll bar --------------- ------------- */
 
@@ -144,7 +169,7 @@ header .top-navbar ::before {
 .sticky .navbar.header-light .navbar-nav>.dropdown.active>a,
 .sticky .navbar.navbar-dark.header-light .navbar-nav>.nav-item.dropdown.megamenu:hover>a,
 .sticky .navbar.navbar-dark.header-light .navbar-nav>.nav-item.dropdown.simple-dropdown:hover>a {
-    color: #000 !important;
+    color: var(--color-black) !important;
 }
 
 
@@ -340,7 +365,7 @@ header .top-navbar ::before {
     padding: 14px 28px;
     background: #2E2E2E;
     border: 1px solid #2E2E2E;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .subscribe-form button {
@@ -353,7 +378,7 @@ header .top-navbar ::before {
 }
 
 .subscribe-form button i {
-    color: #fff;
+    color: var(--color-white);
     font-size: 22px;
     transform: rotate(-6deg);
 }
@@ -412,7 +437,7 @@ input[type=radio] {
     appearance: none;
     height: 15px;
     width: 15px;
-    background: #fff;
+    background: var(--color-white);
     border: 2px solid var(--sec-color);
     margin: 0 8px 0 0;
     display: flex;
@@ -546,7 +571,7 @@ input:checked+label:before,
 select:focus,
 select:active {
     background-color: var(--main-color);
-    color: #fff;
+    color: var(--color-white);
     border-color: var(--main-color);
 }
 
@@ -576,7 +601,7 @@ input[type="checkbox"]+label:after {
     top: 0.45em;
     right: 0.2em;
     font-size: 0.8em;
-    color: #fff;
+    color: var(--color-white);
     opacity: 0;
     font-family: FontAwesome;
     content: "\f00c";
@@ -608,7 +633,7 @@ select:active {
 
 select option {
     background-color: var(--main-color);
-    color: #fff;
+    color: var(--color-white);
 }
 
 .input-group {
@@ -702,7 +727,7 @@ select option {
 
 .form-page {
     box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
-    background-color: #fff;
+    background-color: var(--color-white);
 }
 
 /* courses */
@@ -741,7 +766,7 @@ select option {
     display: inline-block;
     width: 100%;
     padding: 15px 15px;
-    background: #fff1ee;
+    background: var(--color-white)1ee;
     margin-bottom: -8px;
 }
 
@@ -769,7 +794,7 @@ select option {
 }
 
 .courses-item:hover .courses-content {
-    background: #fff;
+    background: var(--color-white);
 }
 
 .courses-img-outer {
@@ -790,7 +815,7 @@ select option {
     position: absolute;
     top: -18px;
     right: 30px;
-    color: #fff;
+    color: var(--color-white);
     padding: 5px 10px;
 }
 
@@ -859,7 +884,7 @@ select option {
 }
 
 .class-area2 h2 {
-    color: #fff;
+    color: var(--color-white);
 }
 
 .class-active .single-project {
@@ -874,7 +899,7 @@ select option {
     background: none;
     padding: 0;
     font-size: 36px;
-    color: #fff;
+    color: var(--color-white);
     z-index: 9;
     cursor: pointer;
     transition: .3s;
@@ -886,7 +911,7 @@ select option {
 
 .class-active .slick-arrow:hover {
     background: var(--sec-color);
-    color: #fff;
+    color: var(--color-white);
 }
 
 .class-active .slick-next {
@@ -908,10 +933,10 @@ select option {
 .course-meta {
     position: absolute;
     bottom: 0;
-    background: #00000082;
+    background: var(--color-black)00082;
     width: 100%;
     padding: 15px;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .course-meta .author {
@@ -933,7 +958,7 @@ select option {
 }
 
 .course-meta .author a {
-    color: #fff;
+    color: var(--color-white);
     font-size: 16px;
     font-family: 'Jost', sans-serif;
 }
@@ -956,7 +981,7 @@ select option {
 }
 
 .course-meta2 .author a {
-    color: #fff;
+    color: var(--color-white);
     font-family: 'Jost', sans-serif;
 }
 
@@ -975,7 +1000,7 @@ select option {
 
 .course-meta2 .price {
     padding: 5px 30px;
-    color: #fff;
+    color: var(--color-white);
     background: var(--main-color);
     border-radius: 30px;
     font-weight: 600;
@@ -1066,13 +1091,13 @@ select option {
 .pagination .page-item:hover a.page-link {
     box-shadow: 0px 16px 32px 0px rgba(255, 74, 87, 0.2);
     background: #ff4a57;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .pagination .page-item.active a.page-link {
     box-shadow: 0px 16px 32px 0px rgba(255, 74, 87, 0.2);
     background: #ff4a57;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .pagination-wrap .pagination {
@@ -1089,7 +1114,7 @@ select option {
 
 .pagination-wrap .pagination li.active a {
     background: #252525;
-    color: #ffffff;
+    color: var(--color-white)fff;
     box-shadow: 0px 8px 16px 0px rgba(26, 35, 126, 0.32);
 }
 
@@ -1101,13 +1126,13 @@ select option {
     line-height: 50px;
     background: var(--main-color);
     border-radius: 50%;
-    color: #fff;
+    color: var(--color-white);
     font-size: 14px;
     text-align: center;
 }
 
 .pagination-wrap .pagination li a:hover {
-    color: #ffffff;
+    color: var(--color-white)fff;
     background: var(--main-color);
 }
 
@@ -1146,7 +1171,7 @@ select option {
     position: relative;
     min-height: 450px;
     background-repeat: no-repeat;
-    background-color: #000;
+    background-color: var(--color-black);
 }
 
 .breadcrumb-wrap2 {
@@ -1182,7 +1207,7 @@ select option {
 
 .breadcrumb li a {
     font-size: 16px;
-    color: #fff;
+    color: var(--color-white);
     font-weight: 500;
 }
 
@@ -1198,7 +1223,7 @@ select option {
     font-size: 70px;
     margin-bottom: 25px;
     line-height: 1;
-    color: #fff;
+    color: var(--color-white);
     letter-spacing: 1px;
 }
 
@@ -1209,7 +1234,7 @@ select option {
 }
 
 .breadcrumb>.active {
-    color: #fffc !important;
+    color: var(--color-white)c !important;
     font-weight: 500;
 }
 
@@ -1267,7 +1292,7 @@ select option {
     text-align: center;
     font-size: 18px;
     line-height: 100px;
-    color: #ffffff;
+    color: var(--color-white)fff;
     font-weight: 400;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
@@ -1284,7 +1309,7 @@ select option {
 .project-detail .single-item-carousel .owl-next:hover,
 .project-detail .single-item-carousel .owl-prev:hover {
     background-color: rgba(255, 255, 255, .5);
-    color: #000000;
+    color: var(--color-black)000;
 }
 
 .project-detail .text-column {
@@ -1300,7 +1325,7 @@ select option {
     background: var(--main-color);
     border-radius: 20px;
     padding: 30px;
-    color: #FFFFFF;
+    color: var(--color-white)FFF;
     font-size: 48px;
     font-weight: 600;
     margin-right: 20px;
@@ -1327,7 +1352,7 @@ select option {
 .project-detail .pr-ul .icon i {
     width: 40px;
     height: 40px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: var(--color-white)FFF 0% 0% no-repeat padding-box;
     border: 2px solid #EEEEEE;
     border-radius: 50%;
     text-align: center;
@@ -1349,7 +1374,7 @@ select option {
 }
 
 .project-detail .leactures li a:hover {
-    color: #000;
+    color: var(--color-black);
 }
 
 .project-detail .leactures li .text i {
@@ -1448,7 +1473,7 @@ select option {
 .project-detail .info-column .inner-column {
     position: relative;
     padding: 30px;
-    background: #fff;
+    background: var(--color-white);
     border: 2px solid #f5f5f5 !important;
 }
 
@@ -1466,7 +1491,7 @@ select option {
 
 .project-detail .info-column .inner-column2 h3 {
     background: var(--sec-color);
-    color: #fff;
+    color: var(--color-white);
     font-size: 20px;
     padding: 15px;
     margin-bottom: 15px;
@@ -1493,7 +1518,7 @@ select option {
 
 .project-detail .info-column .inner-column3 h3 {
     background: var(--main-color);
-    color: #fff;
+    color: var(--color-white);
     font-size: 20px;
     padding: 15px;
     margin-bottom: 15px;
@@ -1505,7 +1530,7 @@ select option {
 
 .project-detail .project-info li .btn {
     width: 100%;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .project-detail .project-info li .slider-btn {
@@ -1566,7 +1591,7 @@ select option {
     bottom: 0;
     font-size: 18px;
     font-weight: 600;
-    color: #000;
+    color: var(--color-black);
     text-decoration: line-through;
 }
 
@@ -1607,7 +1632,7 @@ select option {
 
 .project-detail .lower-content th {
     background: var(--main-color);
-    color: #fff;
+    color: var(--color-white);
 }
 
 /* faq */
@@ -1632,7 +1657,7 @@ select option {
     width: 100%;
     text-align: left;
     padding-right: 75px;
-    background: #fff;
+    background: var(--color-white);
     border: 1px solid var(--main-color);
     border-radius: 4px;
     line-height: normal;
@@ -1719,16 +1744,16 @@ select option {
 
 .project-detail .project-info li .my--btn {
     width: 100%;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .project-detail .project-info li .my--btn:hover {
-    color: #000;
+    color: var(--color-black);
 }
 
 .my--btn {
     border-radius: 4px;
-    color: #fff;
+    color: var(--color-white);
     display: inline-block;
     font-size: 16px;
     letter-spacing: 0;
