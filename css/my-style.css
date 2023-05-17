@@ -512,7 +512,8 @@ input,
 input[type="radio"]+label,
 input[type="checkbox"]+label:before,
 select option,
-select {
+select,
+textarea {
     width: 100%;
     padding: 1em;
     line-height: 1.4;
@@ -526,7 +527,7 @@ select {
     transition: all 0.35s ease-in-out;
 }
 
-input:focus {
+input:focus , textarea:focus{
     outline: 0;
     border-color: var(--main-color);
 }
@@ -535,7 +536,7 @@ input:focus+.input-icon i {
     color: var(--main-color);
 }
 
-input:focus+.input-icon:after {
+input:focus+.input-icon:after , textarea:focus+.input-icon:after {
     border-left-color: var(--main-color);
 }
 
@@ -655,9 +656,10 @@ select option {
     position: relative;
 }
 
-.input-group-icon input {
+.input-group-icon input , .input-group-icon textarea {
     padding-right: 4.4em;
 }
+
 
 .input-group-icon .input-icon {
     position: absolute;
