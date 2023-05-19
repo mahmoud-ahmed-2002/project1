@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="../css/font-icons.min.css" />
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../css/theme-vendors.min.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/my-style.css">
     <link rel="stylesheet" href="css/style.min.css">
 
 </head>
@@ -166,10 +168,11 @@
                     </ul>
                     <form class="d-flex">
                         <div class="header-language btn-group dropdown-style-01 d-lg-inline-block">
-                            <button type="button" class="btn dropdown-toggle sm-w-100 main-font" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <span class="icon-country no-margin-left"><img src="../images/country-flag-16X16/usa.png"
-                                        alt="" /></span>EN<span class="caret"></span><i class="fas fa-angle-down"></i>
+                            <button type="button" class="btn dropdown-toggle sm-w-100 main-font"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="icon-country no-margin-left"><img
+                                        src="../images/country-flag-16X16/usa.png" alt="" /></span>EN<span
+                                    class="caret"></span><i class="fas fa-angle-down"></i>
                             </button>
                             <ul class="dropdown-menu">
                                 <li>
@@ -189,15 +192,87 @@
     </div>
     <!-- end header -->
     <!-- start section -->
-    <section class="parallax bg-extra-dark-gray p-0 " data-parallax-background-ratio="0.5"
-        style="background-image:url('../images/people-holding-banner_23-2148074622.jpg'); background-size: cover ; background-position: center ;">
-        <div class="container position-relative">
-            <div class="row justify-content-center">
-                <div
-                    class="col-12 col-xl-8 col-md-10 col-lg-8 full-screen flex-column d-flex justify-content-center text-center w-65  md-landscape-h-600px z-index-0">
-                    <img src="image/text-english.png" style="margin-top: 500px; " alt="" srcset="">
+    <section class="mainSection">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-7 order-md-2 p-1">
+                    <!-- orbit canvas -->
+                    <div id="globe"> <canvas></canvas> </div>
+                </div>
+                <div class="col-md-5 order-md-1 p-1">
+                    <!-- main slider -->
+                    <div class="mainSlider swiperContainer">
+                        <div class="swiper mainSliderContainer">
+                            <div class="swiper-wrapper">
+                                <!-- swiper-slide -->
+                                <div class="swiper-slide mainSlideItem">
+                                    <div class="info">
+                                        <h1 class="sliderTitle">Entrepreneurship Club</h1>
+                                        <p class="hint">
+                                            Building an entrepreneurial culture and developing the capabilities of
+                                            entrepreneurs to enable them to establish and manage
+                                            Small projects successfully. Preparing professional competencies in the
+                                            fields of knowledge economics.
+                                            Provide a positive environment to incubate creative ideas
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- swiper-slide -->
+                                <div class="swiper-slide mainSlideItem">
+                                    <div class="info">
+                                        <h1 class="sliderTitle">TICO</h1>
+                                        <p class="hint">
+                                            TICO office aims to achieve its vision and mission through its three
+                                            offices:
+
+                                            Technology Transfer Office (TTO)
+                                            Technology and Innovation Support Center through patents and intellectual
+                                            property rights
+                                            (TISC)
+                                            Office for the follow-up of research projects, grants, relations and
+                                            international cooperation to support innovation
+                                            (GICO)
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <!-- swiper-slide -->
+                                <div class="swiper-slide mainSlideItem">
+                                    <div class="info">
+                                        <h1 class="sliderTitle">Manoufia University </h1>
+                                        <p class="hint">
+                                            Menoufia University is one of the institutions of higher education that contributes to the preparation of human cadres
+                                            necessary for the labor market and rehabilitate them by providing educational, research and community services
+                                            Distinguished according to the reference standards to achieve the goals of sustainable development and gain the trust of society
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <!-- bubble-animate -->
+        <div class="bubble-animate">
+            <span class="circle small square1"></span>
+            <span class="circle small square2"></span>
+            <span class="circle small square3"></span>
+            <span class="circle small square4"></span>
+            <span class="circle small square5"></span>
+            <span class="circle medium square1"></span>
+            <span class="circle medium square2"></span>
+            <span class="circle medium square3"></span>
+            <span class="circle medium square4"></span>
+            <span class="circle medium square5"></span>
+            <span class="circle large square1"></span>
+            <span class="circle large square2"></span>
+            <span class="circle large square3"></span>
+            <span class="circle large square4"></span>
+            <span class="circle large2 square1"></span>
+            <span class="circle large2 square2"></span>
+            <span class="circle large2 square3"></span>
+            <span class="circle large2 square4"></span>
         </div>
     </section>
     <!-- end section -->
@@ -826,7 +901,11 @@
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/theme-vendors.min.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
-    <script type="text/javascript" src="js/my-main.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/three.js"></script>
+    <script src="../js/orbit.js"></script>
+    <script src="../js/custom_orbit.js"></script>
+    <script type="text/javascript" src="../js/my-main.js"></script>
 </body>
 
 </html>
