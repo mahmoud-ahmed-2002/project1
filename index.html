@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/font-icons.min.css" />
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/theme-vendors.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/style.min.css">
@@ -208,15 +209,82 @@
     </div>
     <!-- end header -->
     <!-- start section -->
-    <section class="parallax bg-extra-dark-gray p-0 " data-parallax-background-ratio="0.5"
-        style="background-image:url('images/people-holding-banner_23-2148074622.jpg'); background-size: cover ;     background-position: 50% 50.95px;">
-        <div class="container position-relative">
-            <div class="row justify-content-center">
-                <div
-                    class="col-12 col-xl-8 col-md-10 col-lg-8 full-screen flex-column d-flex justify-content-center text-center w-65  md-landscape-h-600px z-index-0">
-                    <img src="text.png" style="margin-top: 500px; " alt="" srcset="">
+    <section class="mainSection">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-7 order-md-2 p-1">
+                    <!-- orbit canvas -->
+                    <div id="globe"> <canvas></canvas> </div>
+                </div>
+                <div class="col-md-5 order-md-1 p-1">
+                    <!-- main slider -->
+                    <div class="mainSlider swiperContainer">
+                        <div class="swiper mainSliderContainer">
+                            <div class="swiper-wrapper">
+                                <!-- swiper-slide -->
+                                <div class="swiper-slide mainSlideItem">
+                                    <div class="info">
+                                        <h1 class="sliderTitle"> نادي ريادة الاعمال </h1>
+                                        <p class="hint">
+                                            بناء ثقافة ريادة الأعمال وتنمية قدرات رواد الأعمال لتمكينهم من إنشاء وإدارة
+                                            المشاريع الصغيرة بنجاح. إعداد الكفاءات المهنية في مجالات اقتصاديات المعرفة.
+                                            توفير بيئة إيجابية لاحتضان الأفكار الإبداعية
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- swiper-slide -->
+                                <div class="swiper-slide mainSlideItem">
+                                    <div class="info">
+                                        <h1 class="sliderTitle">مكتب التايكو </h1>
+                                        <p class="hint">
+                                            يهدف مكتب TICO إلى تحقيق رؤيته ورسالته من خلال مكاتبه الثلاثة وهي:
+
+                                            مكتب نقل التكنولوجيا (TTO)
+                                            مركز دعم التكنولوجيا والابتكار من خلال براءات الاختراع وحقوق الملكية الفكرية
+                                            (TISC)
+                                            مكتب متابعة المشروعات البحثية والمنح والعلاقات والتعاون الدولي لدعم الابتكار
+                                            (GICO)
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <!-- swiper-slide -->
+                                <div class="swiper-slide mainSlideItem">
+                                    <div class="info">
+                                        <h1 class="sliderTitle">جامعة المنوفية </h1>
+                                        <p class="hint">
+                                            جامعة المنوفية إحدى مؤسسات التعليم العالى التى تسهم فى إعداد الكوادر البشرية
+                                            اللازمة لسوق العمل وتأهيلها من خلال تقديم خدمات تعليمية وبحثية ومجتمعية
+                                            متميزة وفق المعايير المرجعية لتحقيق أهداف التنمية المستدامة وكسب ثقة المجتمع
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <!-- bubble-animate -->
+        <div class="bubble-animate">
+            <span class="circle small square1"></span>
+            <span class="circle small square2"></span>
+            <span class="circle small square3"></span>
+            <span class="circle small square4"></span>
+            <span class="circle small square5"></span>
+            <span class="circle medium square1"></span>
+            <span class="circle medium square2"></span>
+            <span class="circle medium square3"></span>
+            <span class="circle medium square4"></span>
+            <span class="circle medium square5"></span>
+            <span class="circle large square1"></span>
+            <span class="circle large square2"></span>
+            <span class="circle large square3"></span>
+            <span class="circle large square4"></span>
+            <span class="circle large2 square1"></span>
+            <span class="circle large2 square2"></span>
+            <span class="circle large2 square3"></span>
+            <span class="circle large2 square4"></span>
         </div>
     </section>
     <!-- end section -->
@@ -841,6 +909,10 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/theme-vendors.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/three.js"></script>
+    <script src="js/orbit.js"></script>
+    <script src="js/custom_orbit.js"></script>
     <script src="js/my-main.js"></script>
 </body>
 
