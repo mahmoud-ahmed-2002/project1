@@ -3,6 +3,13 @@
 :root {
     --main-color: #9461a6;
     --sec-color: #f19202;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --bs-white: #ffffff;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
 }
 
 ::selection {
@@ -58,6 +65,44 @@ header.sticky .navbar .navbar-brand .default-logo {
     }
 }
 
+
+/* ----------- -------------- snipper ------------ -----------  */
+
+.snipeer {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 5;
+}
+
+.snipeer img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------- -------------- button toggle dark and light mode ----------- */
+
+.toggleDarkMode {
+    border: 0px;
+    background-color: transparent;
+}
+
+[data-theme="dark"] {
+    --main-color: #9461a6;
+    --sec-color: #f19202;
+    --color-white: #000;
+    --color-black: #fff;
+    --bs-white: #000;
+    --bs-light: #212529;
+    --bs-dark: #f8f9fa;
+    --bs-white-rgb: 0, 0, 0;
+    --bs-black-rgb: 225, 225, 225;
+}
+
+/* ----------- -------------- page scroll bar --------------- ------------- */
+
 ::-webkit-scrollbar {
     width: 5px;
     background: var(--main-color);
@@ -80,6 +125,7 @@ header .top-navbar ::before {
     transform: skew(-30deg);
 }
 
+/* ----------- -------------- navbar --------------- ------------- */
 .navbar .navbar-nav .nav-link {
     font-weight: 900;
     font-size: 17px;
@@ -123,8 +169,10 @@ header .top-navbar ::before {
 .sticky .navbar.header-light .navbar-nav>.dropdown.active>a,
 .sticky .navbar.navbar-dark.header-light .navbar-nav>.nav-item.dropdown.megamenu:hover>a,
 .sticky .navbar.navbar-dark.header-light .navbar-nav>.nav-item.dropdown.simple-dropdown:hover>a {
-    color: #000 !important;
+    color: var(--color-black) !important;
 }
+
+
 
 .dropdown-menu {
     text-align: right;
@@ -144,6 +192,38 @@ header .top-navbar ::before {
     margin-left: 5px !important;
 }
 
+/* ------ ---------- ---------- navbar scroll ----------- ------------- ------------  */
+.nav-scroll .navbar .navbar-nav .nav-link {
+    font-size: 14px;
+    padding: 0;
+    margin: 0 8px;
+}
+
+.nav-item.dropdown.megamenu .menu-back-div ul[class*="d-"]:last-child {
+    padding-right: 0px;
+}
+
+.nav-item.dropdown.megamenu .menu-back-div {
+    padding: 10px 5px;
+}
+
+.nav-scroll {
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .7s;
+}
+
+.nav-scroll.scroll {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ------ ---------- ---------- footer ----------- ------------- ------------  */
 .footer-section {
     background-color: #202020;
     position: relative;
@@ -332,6 +412,8 @@ header .top-navbar ::before {
     color: #878787;
 }
 
+/* ----------- ---------------- ------------ radio input --------- ------------ ------- -------------  */
+
 .control {
     margin: 0px 0px 24px 24px;
 }
@@ -422,11 +504,16 @@ input[type=radio]:checked:after {
     background-color: var(--main-color);
 }
 
+/* ------------- ----------------- style of form ----------- --------------- -------  */
+
+/* 64ac15 */
+
 input,
 input[type="radio"]+label,
 input[type="checkbox"]+label:before,
 select option,
-select {
+select,
+textarea {
     width: 100%;
     padding: 1em;
     line-height: 1.4;
@@ -440,7 +527,8 @@ select {
     transition: all 0.35s ease-in-out;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     outline: 0;
     border-color: var(--main-color);
 }
@@ -449,7 +537,8 @@ input:focus+.input-icon i {
     color: var(--main-color);
 }
 
-input:focus+.input-icon:after {
+input:focus+.input-icon:after,
+textarea:focus+.input-icon:after {
     border-left-color: var(--main-color);
 }
 
@@ -569,9 +658,11 @@ select option {
     position: relative;
 }
 
-.input-group-icon input {
+.input-group-icon input,
+.input-group-icon textarea {
     padding-right: 4.4em;
 }
+
 
 .input-group-icon .input-icon {
     position: absolute;
@@ -644,6 +735,7 @@ select option {
     background-color: var(--color-white);
 }
 
+/* courses */
 .class-scroll .schedule li {
     float: left;
     padding: 0 15px;
@@ -668,6 +760,7 @@ select option {
     color: var(--main-color);
     font-weight: 400;
 }
+
 
 .class-scroll .schedule li:last-child {
     padding-right: 0;
@@ -718,6 +811,7 @@ select option {
     padding: 30px;
     float: left;
     position: relative;
+
 }
 
 .courses-content .cat {
@@ -844,7 +938,7 @@ select option {
 .course-meta {
     position: absolute;
     bottom: 0;
-    background: #00000082;
+    background: var(--color-black)00082;
     width: 100%;
     padding: 15px;
     color: var(--color-white);
@@ -971,6 +1065,7 @@ select option {
     color: var(--main-color);
 }
 
+/* 16. pagination */
 .pagination {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1046,6 +1141,7 @@ select option {
     background: var(--main-color);
 }
 
+/*ZoomIn Hover Effect*/
 .hover-zoomin a {
     display: block;
     position: relative;
@@ -1074,12 +1170,13 @@ select option {
     margin-bottom: 30px;
 }
 
+/* breadcrumb */
 .breadcrumb-area {
     background-size: cover;
     position: relative;
     min-height: 450px;
     background-repeat: no-repeat;
-    background-color: #000;
+    background-color: var(--color-black);
 }
 
 .breadcrumb-wrap2 {
@@ -1150,6 +1247,15 @@ select option {
     float: right;
 }
 
+
+/*** 
+
+====================================================================
+		Project Detail
+====================================================================
+
+***/
+
 .project-detail {
     position: relative;
     padding: 120px 0 120px;
@@ -1208,7 +1314,7 @@ select option {
 .project-detail .single-item-carousel .owl-next:hover,
 .project-detail .single-item-carousel .owl-prev:hover {
     background-color: rgba(255, 255, 255, .5);
-    color: #000000;
+    color: var(--color-black)000;
 }
 
 .project-detail .text-column {
@@ -1260,6 +1366,8 @@ select option {
     color: var(--main-color);
 }
 
+
+/* Lower Content */
 .project-detail .leactures li a {
     display: flex;
     margin-bottom: 15px;
@@ -1271,7 +1379,7 @@ select option {
 }
 
 .project-detail .leactures li a:hover {
-    color: #000;
+    color: var(--color-black);
 }
 
 .project-detail .leactures li .text i {
@@ -1298,6 +1406,7 @@ select option {
     background: #f7f8fc;
     padding: 15px 30px 15px 40px;
     font-weight: 600;
+
 }
 
 .project-detail .faq-wrap2 .card-header h2 button::after {
@@ -1360,6 +1469,7 @@ select option {
     display: block;
     margin-bottom: 20px;
 }
+
 
 .project-detail .info-column {
     position: relative;
@@ -1486,7 +1596,7 @@ select option {
     bottom: 0;
     font-size: 18px;
     font-weight: 600;
-    color: #000;
+    color: var(--color-black);
     text-decoration: line-through;
 }
 
@@ -1502,14 +1612,17 @@ select option {
     font-weight: 600;
 }
 
+
 .project-detail .project-info li p {
     font-size: 15px;
     line-height: 24px;
+
     font-weight: 400;
     margin-bottom: 0;
 }
 
 .project-detail .project-info li p a {
+
     display: inline-block;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
@@ -1527,6 +1640,7 @@ select option {
     color: var(--color-white);
 }
 
+/* faq */
 .faq-area .section-title p {
     font-size: 24px;
     margin-top: 25px;
@@ -1612,6 +1726,7 @@ select option {
     line-height: 50px;
     color: var(--main-color);
     border-radius: 4px;
+
 }
 
 .faq-wrap .card-header h2 button.collapsed::after {
@@ -1638,7 +1753,7 @@ select option {
 }
 
 .project-detail .project-info li .my--btn:hover {
-    color: #000;
+    color: var(--color-black);
 }
 
 .my--btn {
@@ -1694,6 +1809,7 @@ select option {
     z-index: -1;
 }
 
+/* ------------------ -------------------- question view ------------- ------------------- ----------------- */
 .comment-user {
     float: right;
     margin-left: 20px;
@@ -1727,4 +1843,24 @@ select option {
 .replay-list {
     padding-bottom: 10px;
     padding-right: 70px;
+}
+
+/* ------------- ------------- main section of index html ----------- ----------  */
+.mainSection {
+    height: 100vh;
+    background: url(../images/people-holding-banner_23-2148074622.jpg) center center;
+    background-size: cover;
+    position: relative;
+}
+
+.mainSection .text-club{
+    position: absolute;
+    top: 64%;
+    right: 22%;
+    left: 22%;
+}
+
+.mainSection .text-club img{
+    height: 100%;
+    width: 100%;
 }
