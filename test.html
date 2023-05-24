@@ -14,90 +14,31 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/my-style.css" />
     <style>
-        
+
     </style>
 </head>
 
 <body data-mobile-nav-style="classic" style="direction: rtl;" data-theme="light">
 
-    <section class="mainSection">
-        <div class="container-fluid">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-7 order-md-2 p-1">
-                    <!-- orbit canvas -->
-                    <div id="globe"> <canvas></canvas> </div>
-                </div>
-                <div class="col-md-5 order-md-1 p-1">
-                    <!-- main slider -->
-                    <div class="mainSlider swiperContainer">
-                        <div class="swiper mainSliderContainer">
-                            <div class="swiper-wrapper">
-                                <!-- swiper-slide -->
-                                <div class="swiper-slide mainSlideItem">
-                                    <div class="info">
-                                        <h1 class="sliderTitle"> نادي ريادة الاعمال </h1>
-                                        <p class="hint">
-                                            بناء ثقافة ريادة الأعمال وتنمية قدرات رواد الأعمال لتمكينهم من إنشاء وإدارة
-                                            المشاريع الصغيرة بنجاح. إعداد الكفاءات المهنية في مجالات اقتصاديات المعرفة.
-                                            توفير بيئة إيجابية لاحتضان الأفكار الإبداعية
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- swiper-slide -->
-                                <div class="swiper-slide mainSlideItem">
-                                    <div class="info">
-                                        <h1 class="sliderTitle">مكتب التايكو </h1>
-                                        <p class="hint">
-                                            يهدف مكتب TICO إلى تحقيق رؤيته ورسالته من خلال مكاتبه الثلاثة وهي:
-
-                                            مكتب نقل التكنولوجيا (TTO)
-                                            مركز دعم التكنولوجيا والابتكار من خلال براءات الاختراع وحقوق الملكية الفكرية
-                                            (TISC)
-                                            مكتب متابعة المشروعات البحثية والمنح والعلاقات والتعاون الدولي لدعم الابتكار
-                                            (GICO)
-                                        </p>
-
-                                    </div>
-                                </div>
-                                <!-- swiper-slide -->
-                                <div class="swiper-slide mainSlideItem">
-                                    <div class="info">
-                                        <h1 class="sliderTitle">جامعة المنوفية </h1>
-                                        <p class="hint">
-                                            جامعة المنوفية إحدى مؤسسات التعليم العالى التى تسهم فى إعداد الكوادر البشرية
-                                            اللازمة لسوق العمل وتأهيلها من خلال تقديم خدمات تعليمية وبحثية ومجتمعية
-                                            متميزة وفق المعايير المرجعية لتحقيق أهداف التنمية المستدامة وكسب ثقة المجتمع
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="row" data-sticky-container>
+        <div class="medium-2 columns">
+            <img src="http://placehold.it/250x250" class="sticky" data-margin-top="20" data-sticky-for="1023"
+                data-sticky-class="is-sticky">
         </div>
-        <!-- bubble-animate -->
-        <div class="bubble-animate">
-            <span class="circle small square1"></span>
-            <span class="circle small square2"></span>
-            <span class="circle small square3"></span>
-            <span class="circle small square4"></span>
-            <span class="circle small square5"></span>
-            <span class="circle medium square1"></span>
-            <span class="circle medium square2"></span>
-            <span class="circle medium square3"></span>
-            <span class="circle medium square4"></span>
-            <span class="circle medium square5"></span>
-            <span class="circle large square1"></span>
-            <span class="circle large square2"></span>
-            <span class="circle large square3"></span>
-            <span class="circle large square4"></span>
-            <span class="circle large2 square1"></span>
-            <span class="circle large2 square2"></span>
-            <span class="circle large2 square3"></span>
-            <span class="circle large2 square4"></span>
+        <div class="medium-8 columns">
+            <h1>Sticky-js</h1>
+            <p>Lorem ipsum.....</p>
         </div>
-    </section>
+        <div class="medium-2 columns">
+            <img src="http://placehold.it/250x250" class="sticky" data-margin-top="20" data-sticky-for="1023"
+                data-sticky-class="is-sticky">
+        </div>
+    </div>
+
+    <script src="sticky.min.js"></script>
+    <script>
+        var sticky = new Sticky('.sticky');
+    </script>
 
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/theme-vendors.min.js"></script>
