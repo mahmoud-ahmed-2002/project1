@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrepreneurship Club</title>
     <link rel="icon" type="image/x-icon" href="../images/logo/Logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/font-icons.min.css" />
     <link rel="stylesheet" href="../../assets/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="../../assets/css/theme-vendors.min.css" />
@@ -231,28 +232,28 @@
     <section class=" p-0">
         <div class="container">
             <h4 class="alt-font text-center cd-headline loading-bar text-extra-dark-gray margin-seven-bottom">
-
                 <span class="cd-words-wrapper text-base-color letter-spacing-1px  font-weight-400">
-                    <b class="is-visible">Register your idea</b>
-
+                    <b class="is-visible">Intellectual property rights registration</b>
                 </span>
             </h4>
             <div class=" bg-light form-page p-5">
                 <form>
                     <div class="row">
-                        <div class="input-group input-group-icon">
-                            <input type="text" placeholder="full name" />
-                            <div class="input-icon"><i class="fa fa-user"></i></div>
+                        <div class=" col-md-12">
+                            <div class="input-group input-group-icon">
+                                <input type="text" placeholder="full name" />
+                                <div class="input-icon"><i class="fa fa-user"></i></div>
+                            </div>
                         </div>
                         <div class=" col-md-4">
                             <div class="input-group input-group-icon">
-                                <input type="text" placeholder="the college " />
+                                <input type="text" placeholder="factuly " />
                                 <div class="input-icon"><i class="fas fa-university"></i></div>
                             </div>
                         </div>
                         <div class=" col-md-4">
                             <div class="input-group input-group-icon">
-                                <input type="password" placeholder="Specialization " />
+                                <input type="password" placeholder="deprtment " />
                                 <div class="input-icon"><i class="far fa-building"></i></div>
                             </div>
                         </div>
@@ -263,37 +264,59 @@
                             </div>
                         </div>
                         <div class="input-group input-group-icon">
-                            <input type="password" placeholder="email" />
+                            <input type="password" placeholder="E-mail" />
                             <div class="input-icon"><i class="fa fa-envelope"></i></div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-half">
-                            <h4 class=" d-inline-block">idea type </h4>
-                            <div class="input-group d-inline-block">
-                                <input id="idea-invention" type="radio" name="gender" value="اختراع" />
-                                <label for="idea-invention">invention </label>
-                                <input id="idea-Discovery" type="radio" name="gender" value="اكتشاف" />
-                                <label for="idea-Discovery">Discovery</label>
-                                <input id="idea-reach" type="radio" name="gender" value="بحث علمى" />
-                                <label for="idea-reach">scientific reseach </label>
-                                <input id="idea-romantic" type="radio" name="gender" value="روايه" />
-                                <label for="idea-romantic">a novel</label>
-                            </div>
+                        <div class="col">
+                            <h4 class=" d-inline-block"> Registering a patent application or utility model </h4>
+                            <p>The owner of the idea must download the rose file to fill in the required data and then upload the file again</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-group input-group-icon">
-                            <input type="text" placeholder="Idea classification" />
-                            <div class="input-icon"><i class="fa fa-credit-card"></i></div>
+                            <div id="wrap">
+                                <a href="#" class="btn-slide">
+                                  <span class="circle"><i class="fa fa-rocket"></i></span>
+                                  <span class="title">demo</span>
+                                  <span class="title-hover">click here </span>
+                                </a>
+                                <a href="#" class="btn-slide2">
+                                  <span class="circle2"><i class="fa fa-download"></i></span>
+                                  <span class="title2">download</span>
+                                  <span class="title-hover2">click here</span>
+                                </a>
+                                </div>
                         </div>
                         <div class="input-group input-group-icon">
-                            <input type="text" placeholder="Brief summary of the idea " />
-                            <div class="input-icon"><i class="fa fa-credit-card"></i></div>
+                            <form class="form-container" enctype='multipart/form-data'>
+                                <div class="upload-files-container">
+                                    <div class="drag-file-area">
+                                        <span class="material-icons-outlined upload-icon"> file_upload </span>
+                                        <h3 class="dynamic-message"> Drag & drop any file here </h3>
+                                        <label class="label"> or
+                                            <span class="browse-files">
+                                                <span class="browse-files-text">browse file</span> <span>from device</span>
+                                                <input type="file" class="default-file-input" />
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <span class="cannot-upload-message"> <span class="material-icons-outlined">error</span> Please select a file
+                                        first <span class="material-icons-outlined cancel-alert-button">cancel</span> </span>
+                                    <div class="file-block">
+                                        <div class="file-info"> <span class="material-icons-outlined file-icon">description</span> <span
+                                                class="file-name"> </span> | <span class="file-size"> </span> </div>
+                                        <span class="material-icons remove-file-icon">delete</span>
+                                        <div class="progress-bar"> </div>
+                                    </div>
+                                    <button type="button" class="upload-button"> Upload </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div class=" ">
-                        <button class=" my--btn my-btn-color"> add </button>
+                        <button class=" btn my--btn my-btn-color"> add </button>
                     </div>
                 </form>
             </div>
